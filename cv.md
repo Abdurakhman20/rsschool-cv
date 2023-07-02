@@ -25,9 +25,9 @@ I am 20 years old. I am a student and in my free time I study web technologies. 
 
 ## My Projects:
 
-- React Sneakers: [GITHUB](https://github.com/Abdurakhman20/react-sneakers)
-  Technology stack: Javascript , React, React - Context, SCSS - Modules
+- React Sneakers: [GITHUB](https://github.com/Abdurakhman20/react-sneakers) \
+  Technology stack: Javascript , React, React - Context, SCSS - Modules \
   Description: React-sneakers is a online store selling sneakers
-- React Pizza: [GITHUB](https://github.com/Abdurakhman20/react-pizza)
-  Technology stack: Typescript , React, Redux-Toolkit, SCSS - Modules
+- React Pizza: [GITHUB](https://github.com/Abdurakhman20/react-pizza) \
+  Technology stack: Typescript , React, Redux-Toolkit, SCSS - Modules \
   Description: React-pizza is a online store selling pizzas
