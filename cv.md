@@ -2,11 +2,7 @@
 
 ## Frontend Developer
 
----
-
 ## Contact Me:
-
----
 
 - Phone: +7 (925) 952-31-42
 - E-mail: ausmanov706@gmail.com
