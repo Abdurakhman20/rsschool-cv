@@ -49,7 +49,7 @@
       <main class="main">
         <section class="section-skills">
           <div class="container">
-            <h2 class="section-skills__title">My Skills</h2>
+            <h2 class="section-skills__title title">My Skills</h2>
             <ul class="section-skills__info">
               <li class="section-skills__info-item">
                 <img src="images/html.png" alt="img" class="section-skills__info-img">
@@ -61,7 +61,7 @@
               </li>
               <li class="section-skills__info-item">
                 <img src="images/js.png" alt="img" class="section-skills__info-img">
-                <p class="section-skills__info-text">JavaScript (ES6+)</p>
+                <p class="section-skills__info-text">JavaScript</p>
               </li>
               <li class="section-skills__info-item">
                 <img src="images/ts.png" alt="img" class="section-skills__info-img">
@@ -80,6 +80,52 @@
                 <p class="section-skills__info-text">Git</p>
               </li>
             </ul>
+          </div>
+        </section>
+        <section class="section-code">
+          <div class="container">
+            <h2 class="section-code__title title">Code Examples</h2>
+            <pre class="section-code__code-wrapper">
+              <code class="section-code__code-example">
+                export const maskPhoneNumber = (event: React.ChangeEvent< HTMLInputElement> ) => {
+                  let value = event.target.value;
+                  let inputNumValue = value.replace(/\D/g, "");
+                  let formattedInputValue = "";
+                  const selectionStart = event.target.selectionStart;
+                  if (!inputNumValue) {
+                    return (event.target.value = "");
+                  }
+                  if (value.length !== selectionStart) {
+                    return;
+                  }
+                  if (["7", "8", "9"].indexOf(inputNumValue[0]) > -1) {
+                    //Russian phone number
+                    if (inputNumValue[0] === "9") {
+                      inputNumValue = "7" + inputNumValue;
+                    }
+                    const firstSymbol = inputNumValue[0] === "8" ? "+7" : "+7";
+                    formattedInputValue = firstSymbol + " ";
+                
+                    if (inputNumValue.length > 1) {
+                      formattedInputValue += "(" + inputNumValue.substring(1, 4);
+                    }
+                    if (inputNumValue.length >= 5) {
+                      formattedInputValue += ") " + inputNumValue.substring(4, 7);
+                    }
+                    if (inputNumValue.length >= 8) {
+                      formattedInputValue += "-" + inputNumValue.substring(7, 9);
+                    }
+                    if (inputNumValue.length >= 10) {
+                      formattedInputValue += "-" + inputNumValue.substring(9, 11);
+                    }
+                  } else {
+                    // Not Russian phone number
+                    formattedInputValue = "+" + inputNumValue.substring(0, 16);
+                  }
+                  event.target.value = formattedInputValue;
+                };
+              </code>
+            </pre>
           </div>
         </section>
       </main>
