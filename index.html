@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rsschool-cv</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <header class="header">
+        <div class="container header__wrapper">
+          <div class="header__first-block">
+            <img src="images/my-photo.jpg" class="header__logo" alt="my-photo"> 
+            <div class="header__title">
+              <h1 class="header__title-name">Usmanov Abdurakhman</h1>
+              <p class="header__title-proffession">Frontend Developer</p>
+              <p class="header__title-desc">
+                I am 20 years old. I am a student and in my free time I study web technologies.
+                In the future, I want to become a real professional in the field of Frontend development.
+              </p>
+            </div>
+          </div>
+          <div class="header__second-block">
+            <ul class="header__info">
+              <li class="header__info-item">
+                <span class="header__info-title">Email</span>
+                <a href="#" class="header__info-text">ausmanov706@gmail.com</a>
+              </li>
+              <li class="header__info-item">
+                <span class="header__info-title">GitHub</span>
+                <a href="https://github.com/Abdurakhman20/" target="_blank" class="header__info-text">Abdurakhman20</a>
+              </li>
+              <li class="header__info-item">
+                <span class="header__info-title">Telegram</span>
+                <a href="https://t.me/Ausm2002" target="_blank" class="header__info-text">Abdurakhman Usmanov</a>
+              </li>
+              <li class="header__info-item">
+                <span class="header__info-title">Phone</span>
+                <a href="#"  class="header__info-text">+7 (925) 952-31-42</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="section-skills">
+          <div class="container">
+            <h2 class="section-skills__title title">My Skills</h2>
+            <ul class="section-skills__info">
+              <li class="section-skills__info-item">
+                <img src="images/html.png" alt="img" class="section-skills__info-img">
+                <p class="section-skills__info-text">HTML</p>
+              </li>
+              <li class="section-skills__info-item">
+                <img src="images/css.png" alt="img" class="section-skills__info-img">
+                <p class="section-skills__info-text">CSS</p>
+              </li>
+              <li class="section-skills__info-item">
+                <img src="images/js.png" alt="img" class="section-skills__info-img">
+                <p class="section-skills__info-text">JavaScript</p>
+              </li>
+              <li class="section-skills__info-item">
+                <img src="images/ts.png" alt="img" class="section-skills__info-img">
+                <p class="section-skills__info-text">TypeScript</p>
+              </li>
+              <li class="section-skills__info-item">
+                <img src="images/react.png" alt="img" class="section-skills__info-img">
+                <p class="section-skills__info-text">ReactJS</p>
+              </li>
+              <li class="section-skills__info-item">
+                <img src="images/redux.png" alt="img" class="section-skills__info-img">
+                <p class="section-skills__info-text">Redux</p>
+              </li>
+              <li class="section-skills__info-item">
+                <img src="images/git.png" alt="img" class="section-skills__info-img">
+                <p class="section-skills__info-text">Git</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section-code">
+          <div class="container">
+            <h2 class="section-code__title title">Code Examples</h2>
+            <pre class="section-code__code-wrapper">
+              <code class="section-code__code-example">
+                export const maskPhoneNumber = (event: React.ChangeEvent HTMLInputElement ) => {
+                  let value = event.target.value;
+                  let inputNumValue = value.replace(/\D/g, "");
+                  let formattedInputValue = "";
+                  const selectionStart = event.target.selectionStart;
+                  if (!inputNumValue) {
+                    return (event.target.value = "");
+                  }
+                  if (value.length !== selectionStart) {
+                    return;
+                  }
+                  if (["7", "8", "9"].indexOf(inputNumValue[0]) > -1) {
+                    //Russian phone number
+                    if (inputNumValue[0] === "9") {
+                      inputNumValue = "7" + inputNumValue;
+                    }
+                    const firstSymbol = inputNumValue[0] === "8" ? "+7" : "+7";
+                    formattedInputValue = firstSymbol + " ";
+                
+                    if (inputNumValue.length > 1) {
+                      formattedInputValue += "(" + inputNumValue.substring(1, 4);
+                    }
+                    if (inputNumValue.length >= 5) {
+                      formattedInputValue += ") " + inputNumValue.substring(4, 7);
+                    }
+                    if (inputNumValue.length >= 8) {
+                      formattedInputValue += "-" + inputNumValue.substring(7, 9);
+                    }
+                    if (inputNumValue.length >= 10) {
+                      formattedInputValue += "-" + inputNumValue.substring(9, 11);
+                    }
+                  } else {
+                    // Not Russian phone number
+                    formattedInputValue = "+" + inputNumValue.substring(0, 16);
+                  }
+                  event.target.value = formattedInputValue;
+                };
+              </code>
+            </pre>
+          </div>
+        </section>
+        <section class="section-projects">
+          <div class="container">
+            <h2 class="section-projects__title title">My Projects</h2>
+            <ul class="section-projects__info">
+              <li class="section-projects__info-item">
+                <span class="section-projects__info-title">
+                  React Sneakers
+                </span>
+                <a href="https://github.com/Abdurakhman20/react-sneakers/" target="_blank" class="section-projects__info-link">GITHUB</a>
+                <p class="section-projects__info-desc">
+                  Technology stack: Javascript , React, React - Context, SCSS - Modules <br>
+                  Description: React-sneakers is a online store selling sneakers
+                </p>
+              </li>
+              <li class="section-projects__info-item">
+                <span class="section-projects__info-title">
+                  React Pizza
+                </span>
+                <a href="https://github.com/Abdurakhman20/react-pizza/" target="_blank" class="section-projects__info-link">GITHUB</a>
+                <p class="section-projects__info-desc">
+                  Technology stack: Typescript , React, Redux-Toolkit, SCSS - Modules <br>
+                  Description: React-pizza is a online store selling pizzas
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section-education">
+          <div class="container">
+            <h2 class="section-education__title title">Education</h2>
+            <img src="images/mgsu.png" class="section-education__university" alt="img">
+            <p class="section-education__desc">Information systems and technologies</p>
+          </div>
+        </section>
+        <section class="section-languages">
+          <div class="container">
+            <h2 class="section-languages__title title">Languages</h2>
+            <ul class="section-languages__info">
+              <li class="section-languages__info-item">
+                Russian: Native
+              </li>
+              <li class="section-languages__info-item">
+                English: Pre-Intermediate (A2)
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <nav class="footer__nav">
+            <a href="https://github.com/Abdurakhman20/" target="_blank" class="footer__my-link">My GitHub</a>
+            <a href="https://rs.school/js/" target="_blank" class="footer__rs-link">
+              <img src="images/rs_school_js.svg" alt="svg">
+            </a> 
+          </nav>
+          <p class="footer__text">
+            09.07.2023
+          </p>
+        </div>
+      </footer>
+  </body>
+</html>
