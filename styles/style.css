@@ -1,6 +1,12 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+li {
+  list-style: none;
+}
+ul {
+  padding: 0;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -49,4 +55,35 @@ body {
   color: #000;
   font-weight: bold;
   margin-bottom: 2px;
+}
+
+/* SECTION SKILLS */
+
+.section-skills__title {
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 30px;
+  color: #1c8eb5;
+}
+.section-skills__info {
+}
+.section-skills__info-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #e4f6fb;
+  padding: 30px;
+  border-radius: 10px;
+}
+.section-skills__info-img {
+  width: 80px;
+  margin-right: 20px;
+}
+.section-skills__info-text {
+  color: #1c8eb5;
+  font-size: 22px;
+  font-weight: bold;
 }
