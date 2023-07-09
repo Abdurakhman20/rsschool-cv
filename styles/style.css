@@ -1,0 +1,158 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+}
+section {
+  box-shadow: 0px 2px 4px #e4f6fb;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.header {
+  background-color: #e4f6fb;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header__first-block {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  width: 150px;
+  border-radius: 10%;
+}
+.header__title {
+  margin-left: 20px;
+}
+.header__title-name {
+  font-size: 26px;
+  font-weight: bold;
+}
+.header__title-proffession {
+  font-size: 18px;
+  color: #1c8eb5;
+}
+.header__title-desc {
+  max-width: 320px;
+}
+.header__info-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.header__info-title {
+  color: #1c8eb5;
+  margin-bottom: 2px;
+}
+.header__info-text {
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+/* SECTION SKILLS */
+.title {
+  font-size: 30px;
+  color: #1c8eb5;
+}
+.section-skills__title {
+  margin-bottom: 60px;
+}
+.section-skills__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-skills__info-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: #e4f6fb;
+  padding: 30px;
+  border-radius: 10px;
+}
+.section-skills__info-img {
+  width: 80px;
+  margin-right: 30px;
+}
+.section-skills__info-text {
+  color: #1c8eb5;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* SECTION CODE  */
+
+.section-code__title {
+  margin-bottom: 60px;
+}
+.section-code__code-wrapper {
+  background-color: #e4f6fb;
+}
+
+/* SECTION PROJECTS */
+
+.section-projects__title {
+  margin-bottom: 60px;
+}
+.section-projects__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section-projects__info-title {
+  font-size: 18px;
+  color: #1c8eb5;
+}
+.section-projects__info-link {
+  color: #000;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* SECTION EDUCATION */
+
+.section-education__desc {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* SECTION LANGUAGES */
+.section-languages__info-item {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+/* FOOTER */
+.footer {
+  background-color: #e4f6fb;
+  padding: 40px 0px;
+}
+.footer__nav {
+  display: flex;
+  align-items: center;
+}
+.footer__my-link {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+.footer__rs-link img {
+  width: 100px;
+}
