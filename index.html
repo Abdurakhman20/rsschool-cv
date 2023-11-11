@@ -14,7 +14,7 @@
       <header class="header">
         <div class="container header__wrapper">
           <div class="header__first-block">
-            <img src="images/my-photo.jpg" class="header__logo" alt="my-photo"> 
+            <img src="images/my-photo.jpg" class="header__logo" alt="my-photo">
             <div class="header__title">
               <h1 class="header__title-name">Usmanov Abdurakhman</h1>
               <p class="header__title-proffession">Frontend Developer</p>
@@ -87,7 +87,7 @@
             <h2 class="section-code__title title">Code Examples</h2>
             <pre class="section-code__code-wrapper">
               <code class="section-code__code-example">
-                export const maskPhoneNumber = (event: React.ChangeEvent HTMLInputElement ) =&gt; {
+                export const maskPhoneNumber = (event: React.ChangeEvent HTMLInputElement) =&gt; {
                   let value = event.target.value;
                   let inputNumValue = value.replace(/\D/g, "");
                   let formattedInputValue = "";
@@ -105,7 +105,6 @@
                     }
                     const firstSymbol = inputNumValue[0] === "8" ? "+7" : "+7";
                     formattedInputValue = firstSymbol + " ";
-                
                     if (inputNumValue.length &gt; 1) {
                       formattedInputValue += "(" + inputNumValue.substring(1, 4);
                     }
@@ -182,7 +181,7 @@
             <a href="https://github.com/Abdurakhman20/" target="_blank" class="footer__my-link">My GitHub</a>
             <a href="https://rs.school/js/" target="_blank" class="footer__rs-link">
               <img src="images/rs_school_js.svg" alt="svg">
-            </a> 
+            </a>
           </nav>
           <p class="footer__text">
             09.07.2023
